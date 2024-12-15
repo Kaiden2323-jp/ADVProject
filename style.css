@@ -1,4 +1,9 @@
-      /* Add this to your existing CSS file */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}   
+/* Add this to your existing CSS file */
       #track-list-modal {
         position: fixed;
         top: 0;
@@ -46,6 +51,7 @@
         font-family: Arial, Helvetica, sans-serif;
         background: linear-gradient(to right,#c722ab, #1391bb);
         font-weight: bold;
+        position: relative;
         }
         
         .player{
@@ -191,6 +197,53 @@
         .volume_slider:hover {
         opacity: 1.0;
         }
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul {
+  display: flex;
+   justify-content: center;
+  padding:10px;
+  gap: 24px ;
+  padding-top: 10px
+
+}
+nav {
+  background-color: rgb(39, 39, 39, 0.75);
+  backdrop-filter: blur(4px);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+#about {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#about-text {
+  min-width:350px;
+    max-width:500px;
+  color: white;
+}
+#about-img img {
+border-radius: 50%;
+}
+.about-content-container {
+  padding:12px;
+}
+#about h2 {
+  margin-bottom: 24px;
+}
         
         .seek_slider {
         width: 60%;
